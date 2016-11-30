@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="slideshow.css">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -161,38 +162,48 @@
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h2>My Projects</h2>
-                    <hr class="small">
+                    <!-- <hr class="small">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <!-- <a href="#"> -->
+                                <a href="#">
                                     <img class="img-portfolio img-responsive" src="img/knoze.PNG">
-                                <!-- </a> -->
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <!-- <a href="#"> -->
+                                <a href="#">
                                     <img class="img-portfolio img-responsive" src="img/animations.PNG">
-                                <!-- </a> -->
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <!-- <a href="#"> -->
+                                <a href="#">
                                     <img class="img-portfolio img-responsive" src="img/autonomous.PNG">
-                                <!-- </a> -->
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <!-- <a href="#"> -->
+                                <a href="#">
                                     <img class="img-portfolio img-responsive" src="img/jpanel.PNG">
-                                 <!-- </a> -->
+                                </a>
                             </div>
                         </div>
                     </div>
                     <!-- /.row (nested) -->
+					
+					<div class="w3-content w3-display-container" style="padding-top:2%">
+                        <img class="img-portfolio img-responsive" src="img/knoze.PNG" style="width:100%">
+                        <img class="img-portfolio img-responsive" src="img/animations.PNG" style="width:100%">
+                        <img class="img-portfolio img-responsive" src="img/autonomous.PNG" style="width:100%">
+                        <img class="img-portfolio img-responsive" src="img/jpanel.PNG" style="width:100%">
+									
+						<a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+						<a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+					</div>
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -330,6 +341,25 @@
     $('.map').on('click', onMapClickHandler);
     </script>
 
+	<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+		showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	var i;
+	var x = document.getElementsByClassName("img-portfolio img-responsive");
+	if (n > x.length) {slideIndex = 1}    
+	if (n < 1) {slideIndex = x.length}
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	}
+	x[slideIndex-1].style.display = "block";  
+}
+</script>
 </body>
 
 </html>
