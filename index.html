@@ -1,365 +1,159 @@
-
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="slideshow.css">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,400italic' rel='stylesheet' type='text/css'>
 
-    <title>Jacky Pat</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<script src="js/modernizr.js"></script>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+	<title>Jacky Pat Portfolio</title>
 </head>
-
 <body>
+	<div class="cd-intro-block">
+		<div class="content-wrapper">
+			<h1>Jacky Pat</h1>
+			<a href="#0" class='cd-btn' data-action="show-projects">Projects</a>
+		</div>
 
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>My Portfolio</a>
-            </li>
-            <li>
-                <a href="#top" onclick=$("#menu-close").click();>Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick=$("#menu-close").click();>About</a>
-            </li>
-            <li>
-                <a href="#services" onclick=$("#menu-close").click();>Resume</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Projects</a>
-            </li>
-            <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
-            </li>
-        </ul>
-    </nav>
+		<div class="footer-wrapper">
+			<ul class="list-inline">
+				<li>
+					<a href="#"><i class="fa fa-github fa-fw fa-3x"></i></a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/aka_shii/"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/jackypat/"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+				</li>
+			</ul>
+		</div>
+	</div> <!-- .cd-intro-block -->
 
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Jacky Pat</h1>
-            <br>
-            <a href="#about" class="btn btn-dark btn-lg">About Me</a>
-        </div>
-    </header>
-
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 style="text-align:left">About Me</h2>
-                    <p class="lead" style="text-align:left">Hello World</a></p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Resume</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <h4>
-                                    <strong>Education</strong>
-                                </h4>
-                                <p>Bachelor of Science, Informatics <br>
-								Ira A. Fulton Schools of Engineering <br>
-								Arizona State University<br>
-								Anticipated May 2017 <br>
-								Cumulative GPA: 3.91 </p>
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <h4>
-                                    <strong>Experience</strong>
-                                </h4>
-                                <p>Intern at PerfOpt Technologies <br>
-								<i>Goodyear, AZ </i><br>
-								<i>Sep. 2016-Present </i><br>
-								I am responsible for writing scripts in C++ for developing content for virtual reality using Unreal Engine.</p>
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <h4>
-                                    <strong>Skills</strong>
-                                </h4>
-                                <p>Computer Software: Unity, Unreal Engine, MS Office, MS Access, MySQL, Visual Studio, SPSS, MaxMSP, Photoshop <br>
-								Languages: HTML, CSS, JavaScript, Processing, experience with Java, C, C#, C++</p>
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <h4>
-                                    <strong>Awards</strong>
-                                </h4>
-                                <p>Dean's List <br>
-								<i>Fall 2013-Present </i><br>
-								Academic honors from the Ira A. Fulton Schools of Engineering for having a GPA of 3.5 or higher.</p>
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Callout
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
-        </div>
-    </aside>
-	-->
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>My Projects</h2>
-                    <!-- <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/knoze.PNG">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/animations.PNG">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/autonomous.PNG">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/jpanel.PNG">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-
-					<div class="w3-content w3-display-container" style="padding-top:2%">
-                        <img class="img-portfolio img-responsive" src="img/knoze.PNG" style="width:100%">
-                        <img class="img-portfolio img-responsive" src="img/animations.PNG" style="width:100%">
-                        <img class="img-portfolio img-responsive" src="img/autonomous.PNG" style="width:100%">
-                        <img class="img-portfolio img-responsive" src="img/jpanel.PNG" style="width:100%">
-
-						<a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-						<a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+	<div class="cd-projects-wrapper">
+		<ul class="cd-slider">
+			<li class="current">
+				<a href="#0">
+					<img src="img/knoze.png" alt="project image">
+					<div class="project-info">
+						<h2>Knoze - Senior Capstone</h2>
+						<p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, dicta.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, dicta.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, dicta.</p>
 					</div>
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
+				</a>
+			</li>
 
-    <!-- Call to Action
-    <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-                </div>
-            </div>
-        </div>
-    </aside> -->
+			<li>
+				<a href="#0">
+					<img src="img/img.png" alt="project image">
+					<div class="project-info">
+						<h2>Project 2</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, dicta.</p>
+					</div>
+				</a>
+			</li>
 
-    <!-- Footer -->
-    <footer>
-	<section id="contact" class="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Jacky Pat</strong>
-                    </h4>
-                    <p>ASU, University Drive
-                        <br>Tempe, AZ 85281</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (602) 903-8664</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">Jacky.Pat@asu.edu</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-github fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Jacky Pat 2018</p>
-                </div>
-            </div>
-        </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-	</section>
-    </footer>
+			<li>
+				<a href="#0">
+					<img src="img/img.png" alt="project image">
+					<div class="project-info">
+						<h2>Project 3</h2>
+						<p>Lorem ipsum dolor sit amet.</p>
+					</div>
+				</a>
+			</li>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+			<li>
+				<a href="#0">
+					<img src="img/img.png" alt="project image">
+					<div class="project-info">
+						<h2>Project 4</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+					</div>
+				</a>
+			</li>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+			<li>
+				<a href="#0">
+					<img src="img/img.png" alt="project image">
+					<div class="project-info">
+						<h2>Project 5</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur.</p>
+					</div>
+				</a>
+			</li>
 
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
-    // Disable Google Maps scrolling
-    // See http://stackoverflow.com/a/25904582/1607849
-    // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function(event) {
-        var that = $(this);
-        that.on('click', onMapClickHandler);
-        that.off('mouseleave', onMapMouseleaveHandler);
-        that.find('iframe').css("pointer-events", "none");
-    }
-    var onMapClickHandler = function(event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-    $('.map').on('click', onMapClickHandler);
-    </script>
+			<li>
+				<a href="#0">
+					<img src="img/img.png" alt="project image">
+					<div class="project-info">
+						<h2>Project 6</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat.</p>
+					</div>
+				</a>
+			</li>
 
-	<script>
-	var slideIndex = 1;
-	showDivs(slideIndex);
+			<li>
+				<a href="#0">
+					<img src="img/img.png" alt="project image">
+					<div class="project-info">
+						<h2>Project 7</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</a>
+			</li>
 
-	function plusDivs(n) {
-		showDivs(slideIndex += n);
-	}
+			<li>
+				<a href="#0">
+					<img src="img/img.png" alt="project image">
+					<div class="project-info">
+						<h2>Project 8</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+					</div>
+				</a>
+			</li>
 
-	function showDivs(n) {
-	var i;
-	var x = document.getElementsByClassName("img-portfolio img-responsive");
-	if (n > x.length) {slideIndex = 1}
-	if (n < 1) {slideIndex = x.length}
-	for (i = 0; i < x.length; i++) {
-		x[i].style.display = "none";
-	}
-	x[slideIndex-1].style.display = "block";
-}
-</script>
+			<li>
+				<a href="#0">
+					<img src="img/img.png" alt="project image">
+					<div class="project-info">
+						<h2>Project 9</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+
+		<ul class="cd-slider-navigation cd-img-replace">
+			<li><a href="#0" class="prev inactive">Prev</a></li>
+			<li><a href="#0" class="next">Next</a></li>
+		</ul> <!-- .cd-slider-navigation -->
+	</div> <!-- .cd-projects-wrapper -->
+
+	<div class="cd-project-content">
+		<div>
+			<h2>Project title here</h2>
+			<em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, ullam.</em>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+			</p>
+			<p>
+				Illum quaerat asperiores aliquam voluptate saepe omnis porro excepturi in atque veritatis sapiente ipsam voluptates iste amet deserunt ullam error pariatur, magni consectetur optio nostrum minima dolorum. Soluta animi nihil doloremque ipsa incidunt vitae architecto beatae, maxime libero, dolore corporis vero porro tenetur ipsam modi repudiandae magnam enim, quibusdam sit.
+			</p>
+			<p>
+				Illum quaerat asperiores aliquam voluptate saepe omnis porro excepturi in atque veritatis sapiente ipsam voluptates iste amet deserunt ullam error pariatur, magni consectetur optio nostrum minima dolorum. Soluta animi nihil doloremque ipsa incidunt vitae architecto beatae, maxime libero, dolore corporis vero porro tenetur ipsam modi repudiandae magnam enim, quibusdam sit.
+			</p>
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
-
 </html>
